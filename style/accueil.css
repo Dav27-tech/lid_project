@@ -33,11 +33,13 @@
 .hero-content {
   position: relative;
   z-index: 1;
-  max-width: 760px;
+  width: min(1320px, calc(100% - 32px));
+  max-width: none;
   padding-block: clamp(76px, 10vw, 110px) clamp(62px, 8vw, 84px);
 }
 
 .hero h1 {
+  max-width: 1040px;
   color: #ffffff;
   font-size: clamp(2.45rem, 6vw, 5.35rem);
   line-height: 0.98;
@@ -46,7 +48,7 @@
 }
 
 .hero-text {
-  max-width: 680px;
+  max-width: 760px;
   color: rgba(255, 255, 255, 0.82);
   font-size: clamp(1.02rem, 2vw, 1.22rem);
   line-height: 1.75;
@@ -100,7 +102,7 @@
 
 .split-layout {
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  grid-template-columns: minmax(320px, 0.82fr) minmax(0, 1.18fr);
   align-items: center;
   gap: clamp(34px, 6vw, 78px);
 }
@@ -172,7 +174,7 @@
 }
 
 .section-heading {
-  max-width: 780px;
+  max-width: 860px;
   margin-bottom: clamp(24px, 4vw, 34px);
 }
 
@@ -451,7 +453,12 @@
   }
 
   .hero-content {
+    width: min(100% - 24px, 1320px);
     padding-block: 68px 58px;
+  }
+
+  .hero h1 {
+    max-width: 720px;
   }
 
   .proof-grid,
