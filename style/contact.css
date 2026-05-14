@@ -17,6 +17,7 @@
 
 .contact-hero-img {
   object-fit: cover;
+  object-position: center 34%;
 }
 
 .contact-hero-overlay {
