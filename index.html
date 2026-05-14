@@ -1,15 +1,16 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Visitez le site web de LID Technology, mini-entreprise spécilisée dans les installations éléctriques domestiques et industrielles, dans le dépanage, la maintenace des appareils électroménagers, l'éclairage publique et aussi des caméras de surveillance"
+      content="LID Technology accompagne les particuliers et les entreprises avec des services électriques, sécurité électronique, réseaux, sites web et applications métier."
     />
-    <title>LID Technology</title>
-    <link rel="stylesheet" href="./style/accueil.css" />
+    <title>LID Technology | Services électriques et solutions numériques</title>
     <link rel="shortcut icon" href="./tools/img/Logo/logo-LID-Tech-bg.png" />
+    <link rel="stylesheet" href="./style/shared.css" />
+    <link rel="stylesheet" href="./style/accueil.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -19,480 +20,461 @@
     />
   </head>
   <body>
-    <header>
-      <nav class="navBar">
-        <div class="logo">
-          <img src="./tools/img/Logo/logo-LID-Tech.png" alt="logo" />
-          <p>LID Technology</p>
-        </div>
+    <header class="site-header">
+      <nav class="nav-bar" aria-label="Navigation principale">
+        <a class="brand" href="#accueil" aria-label="LID Technology">
+          <img src="./tools/img/Logo/logo-LID-Tech.png" alt="" />
+          <span>LID Technology</span>
+        </a>
 
-        <div class="nav-info">
-          <ul class="info-bar">
-            <a href="#Accueil" class="icon"
-              ><i class="fas fa-home"></i>
-              <li>Accueil</li></a
+        <ul class="nav-links">
+          <li>
+            <a href="#accueil"><i class="fas fa-home"></i> Accueil</a>
+          </li>
+          <li>
+            <a href="#propos"><i class="fas fa-info-circle"></i> À propos</a>
+          </li>
+          <li>
+            <a href="#services"
+              ><i class="fa-solid fa-screwdriver-wrench"></i> Services</a
             >
-            <a href="#propos" class="icon"
-              ><i class="fas fa-info-circle"></i>
-              <li>À propos</li></a
+          </li>
+          <li>
+            <a href="#realisations"
+              ><i class="fas fa-project-diagram"></i> Réalisations</a
             >
+          </li>
+        </ul>
 
-            <a href="#services" class="icon"
-              ><i class="fa-solid fa-screwdriver-wrench"></i>
-              <li>Services</li></a
-            >
-
-            <a href="#realisations" class="icon"
-              ><i class="fas fa-project-diagram"></i>
-              <li>Réalisations</li></a
-            >
-          </ul>
-          <div class="contactbtn">
-            <button
-              class="iconContact"
-              onclick="window.location.href = './pages/contact.html'"
-            >
-              Contactez-nous
-            </button>
-          </div>
-        </div>
+        <a class="btn btn-primary" href="./Pages/contact.html">
+          <i class="fa-solid fa-paper-plane"></i>
+          Contact
+        </a>
       </nav>
     </header>
-    <body>
-      <div class="accueil" id="Accueil">
+
+    <main>
+      <section class="hero section-anchor" id="accueil">
         <img
-          src="./tools/img/accueil/male-electrician-working-electrical-panel-male-electrician-overalls_169016-67274.jpg"
-          alt="tableau divisionnaire"
+          src="https://images.unsplash.com/photo-1744113439895-14529bb2f6e6?auto=format&fit=crop&w=1800&q=80"
+          alt="Tableau électrique industriel avec composants de contrôle"
+          class="hero-image"
         />
-        <div class="obscurite"></div>
-        <div class="textAcceuil">
-          <div class="textAcceuil1">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">Électricité | Sécurité | Logiciels</p>
+          <h1>Des solutions techniques fiables pour moderniser votre activité.</h1>
+          <p class="hero-text">
+            LID Technology installe, dépanne et conçoit des systèmes utiles au
+            quotidien: réseaux électriques, caméras de surveillance, sites web,
+            applications desktop et plateformes web.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#services">
+              Voir nos services
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a class="btn btn-ghost" href="./Pages/contact.html">
+              Demander un devis
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="Points forts">
+        <div class="container proof-grid">
+          <article>
+            <strong>24h</strong>
+            <span>Réponse rapide aux urgences techniques</span>
+          </article>
+          <article>
+            <strong>4</strong>
+            <span>Familles de services regroupées clairement</span>
+          </article>
+          <article>
+            <strong>360°</strong>
+            <span>Du câblage terrain aux applications numériques</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="about section section-anchor" id="propos">
+        <div class="container split-layout">
+          <div class="media-frame">
+            <img
+              src="https://images.unsplash.com/photo-1667264501379-c1537934c7ab?auto=format&fit=crop&w=1200&q=80"
+              alt="Infrastructure technique avec racks et câbles réseau"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="section-copy">
+            <p class="eyebrow">À propos</p>
+            <h2>Une équipe orientée terrain, maintenance et transformation digitale.</h2>
             <p>
-              Bienvenue chez<strong> LID Technology </strong>, entreprise qui
-              accompagne les particuliers et les entreprises dans tous leurs
-              besoins électriques. De la conception des schémas à la réalisation
-              des installations domestiques et industrielles, nous assurons
-              aussi la maintenance, le dépannage des appareils électroménagers,
-              l’installation des caméras de surveillance et l’éclairage public.
+              Nous aidons les particuliers, PME et organisations à installer
+              des systèmes stables, documentés et faciles à maintenir. Notre
+              approche combine le travail électrique, la sécurité électronique
+              et le développement logiciel pour livrer des solutions complètes.
             </p>
-          </div>
-          <div class="acceuilBtn" onclick="window.location.href = '#propos'">
-            <button>En Savoir Plus &rarr;</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="aPropos" id="propos">
-        <div class="textePropos">
-          <h1>À PROPOS DE NOUS</h1>
-          <div class="propos1">
-            <div class="imgPropos1">
-              <img
-                src="./tools/img/accueil/african-engineer_173387-4229.jpg"
-                alt="a prpops"
-              />
-            </div>
-            <div class="textePropos1">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                sapiente amet aliquam doloremque, a eaque qui aperiam nulla
-                dolores, vitae minus expedita officiis dolor dolore nemo ad vero
-                earum suscipit!Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Iste harum rerum reprehenderit provident aut
-                sit soluta corporis veritatis. Velit in necessitatibus
-                recusandae atque doloribus vitae culpa aliquam inventore harum
-                et?
-              </p>
-
-              <div class="carre">
-                <i class="fas fa-bullseye"></i>
-                <h2>Notre vision</h2>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                harum rerum reprehenderit provident aut sit soluta corporis
-                veritatis. Velit in necessitatibus recusandae atque doloribus
-                vitae culpa aliquam inventore harum et?
-              </p>
-              <div class="carre2">
-                <i class="fas fa-handshake"></i>
-                <h2>Nos valeurs</h2>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                corrupti excepturi similique laborum porro accusantium quam hic
-                dolores ipsa assumenda error aliquid, fuga adipisci facere nam
-                aperiam. Magni, fugit eligendi.
-              </p>
+            <div class="value-grid">
+              <article>
+                <i class="fa-solid fa-bullseye"></i>
+                <h3>Vision</h3>
+                <p>
+                  Rendre les technologies utiles, accessibles et durables pour
+                  les entreprises locales.
+                </p>
+              </article>
+              <article>
+                <i class="fa-solid fa-handshake"></i>
+                <h3>Valeurs</h3>
+                <p>
+                  Rigueur, transparence, sécurité et accompagnement après la
+                  livraison.
+                </p>
+              </article>
             </div>
           </div>
         </div>
-        <div class="team">
-          <div class="carre3">
-            <h2>Notre Equipe</h2>
-          </div>
-          <div class="containers">
-            <div class="containers1">
-              <div class="container">
-                <div class="imgTeam">
-                  <img src="./tools/img/team/menStand.jpg" alt="portrait" />
-                </div>
-                <div class="texteTeam">
-                  <h3>AMANI MUSAFIRI David</h3>
-                  <h4>Ingénieur Electricien A2</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Delectus quam cum placeat culpa ullam magnam vitae quos!
-                    Autem, temporibus tempore.
-                  </p>
-                </div>
-              </div>
+      </section>
 
-              <div class="container">
-                <div class="imgTeam">
-                  <img
-                    src="./tools/img/team/menPortrait (2).jpg"
-                    alt="portrait"
-                  />
-                </div>
-                <div class="texteTeam">
-                  <h3>ASANTE RUDAHARANA Pacifique</h3>
-                  <h4>Ingénieur Electricien A2</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Delectus quam cum placeat culpa ullam magnam vitae quos!
-                    Autem, temporibus tempore.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="containers1">
-              <div class="container">
-                <div class="imgTeam">
-                  <img src="./tools/img/team/menPortrait.jpg" alt="portrait" />
-                </div>
-                <div class="texteTeam">
-                  <h3>HEKIMA KANYENYEZI Raphaël</h3>
-                  <h4>Ingénieur Electricien A2</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Delectus quam cum placeat culpa ullam magnam vitae quos!
-                    Autem, temporibus tempore.
-                  </p>
-                </div>
-              </div>
-
-              <div class="container">
-                <div class="imgTeam">
-                  <img src="./tools/img/team/menPortrait.jpg" alt="portrait" />
-                </div>
-                <div class="texteTeam">
-                  <h3>MWIRA Premice</h3>
-                  <h4>Ingénieur Electricien A2</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Delectus quam cum placeat culpa ullam magnam vitae quos!
-                    Autem, temporibus tempore.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="service" id="services">
-        <div class="texteService">
-          <h1>NOS SERVICES</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
-            eaque quaerat. At, accusantium modi sequi nulla voluptate possimus,
-            blanditiis beatae ea quo aut dolor reiciendis officia. Optio
-            repellat possimus earum sit deleniti assumenda, commodi voluptatem,
-            odit illo recusandae modi velit.
-          </p>
-        </div>
-        <div class="containerService1">
-          <div class="imgService">
-            <img
-              src="./tools/img/accueil/HD Cameras Installer Orange County.jpg"
-              alt="cameras"
-            />
-          </div>
-          <div class="texteContServe">
-            <h2>Installation des cameras</h2>
-            <blockquote class="para">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
-                ullam adipisci, enim eius hic, voluptas quam ducimus deserunt
-                omnis optio sit ipsa architecto quidem eos consectetur
-                voluptates modi nihil. Ullam.Lorem ipsum dolor sit, amet
-                consectetur adipisicing elit. Porro ullam adipisci, enim eius
-                hic, voluptas quam ducimus deserunt omnis optio sit ipsa
-                architecto quidem eos consectetur voluptates modi nihil. Ullam.
-              </p>
-            </blockquote>
-          </div>
-        </div>
-
-        <div class="containerService2">
-          <div class="texteContServe">
-            <h2>Installation des cameras</h2>
-            <blockquote class="para">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
-                ullam adipisci, enim eius hic, voluptas quam ducimus deserunt
-                omnis optio sit ipsa architecto quidem eos consectetur
-                voluptates modi nihil. Ullam.Lorem ipsum dolor sit, amet
-                consectetur adipisicing elit. Porro ullam adipisci, enim eius
-                hic, voluptas quam ducimus deserunt omnis optio sit ipsa
-                architecto quidem eos consectetur voluptates modi nihil. Ullam.
-              </p>
-            </blockquote>
-          </div>
-          <div class="imgService">
-            <img
-              src="./tools/img/accueil/HD Cameras Installer Orange County.jpg"
-              alt="cameras"
-            />
-          </div>
-        </div>
-
-        <div class="containerService1">
-          <div class="imgService">
-            <img
-              src="./tools/img/accueil/HD Cameras Installer Orange County.jpg"
-              alt="cameras"
-            />
-          </div>
-          <div class="texteContServe">
-            <h2>Installation des cameras</h2>
-            <blockquote class="para">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
-                ullam adipisci, enim eius hic, voluptas quam ducimus deserunt
-                omnis optio sit ipsa architecto quidem eos consectetur
-                voluptates modi nihil. Ullam.Lorem ipsum dolor sit, amet
-                consectetur adipisicing elit. Porro ullam adipisci, enim eius
-                hic, voluptas quam ducimus deserunt omnis optio sit ipsa
-                architecto quidem eos consectetur voluptates modi nihil. Ullam.
-              </p>
-            </blockquote>
-          </div>
-        </div>
-
-        <div class="containerService2">
-          <div class="texteContServe">
-            <h2>Installation des cameras</h2>
-            <blockquote class="para">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
-                ullam adipisci, enim eius hic, voluptas quam ducimus deserunt
-                omnis optio sit ipsa architecto quidem eos consectetur
-                voluptates modi nihil. Ullam.Lorem ipsum dolor sit, amet
-                consectetur adipisicing elit. Porro ullam adipisci, enim eius
-                hic, voluptas quam ducimus deserunt omnis optio sit ipsa
-                architecto quidem eos consectetur voluptates modi nihil. Ullam.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
-                ullam adipisci, enim eius hic, voluptas quam ducimus deserunt
-                omnis optio sit ipsa architecto quidem eos consectetur
-                voluptates modi nihil. Ullam.Lorem ipsum dolor sit, amet
-                consectetur adipisicing elit. Porro ullam adipisci, enim eius
-                hic, voluptas quam ducimus deserunt omnis optio sit ipsa
-                architecto quidem eos consectetur voluptates modi nihil. Ullam.
-              </p>
-            </blockquote>
-          </div>
-
-          <div class="imgService">
-            <img
-              src="./tools/img/accueil/HD Cameras Installer Orange County.jpg"
-              alt="cameras"
-            />
-          </div>
-        </div>
-
-        <div class="containerService1">
-          <div class="imgService">
-            <img
-              src="./tools/img/accueil/HD Cameras Installer Orange County.jpg"
-              alt="cameras"
-            />
-          </div>
-          <div class="texteContServe">
-            <h2>Installation des cameras</h2>
-            <blockquote class="para">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
-                ullam adipisci, enim eius hic, voluptas quam ducimus deserunt
-                omnis optio sit ipsa architecto quidem eos consectetur
-                voluptates modi nihil. Ullam.Lorem ipsum dolor sit, amet
-                consectetur adipisicing elit. Porro ullam adipisci, enim eius
-                hic, voluptas quam ducimus deserunt omnis optio sit ipsa
-                architecto quidem eos consectetur voluptates modi nihil. Ullam.
-              </p>
-            </blockquote>
-          </div>
-        </div>
-      </div>
-      <div class="realisation" id="realisations">
-        <div class="texteRealisation">
-          <h1>NOS REALISATIONS</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            ratione exercitationem nulla reprehenderit, vel adipisci
-          </p>
-        </div>
-        <div class="carteReal">
-          <div class="carteReal1">
-            <div class="imgRealisation">
-              <img
-                src="./tools/img/accueil/african-engineer_173387-4229.jpg"
-                alt="Foreuse-ouverte"
-              />
-            </div>
-            <div class="texteReal">
-              <h2>Dépannage</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                voluptate asperiores enim, veniam corporis quisquam? Magni
-                numquam quam omnis distinctio.
-              </p>
-              <div class="savoir">
-                <i class="fa-solid fa-screwdriver-wrench"></i>
-                <a href="./Pages/galerie.html">En savoir plus &rarr;</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="carteReal1">
-            <div class="imgRealisation">
-              <img
-                src="./tools/img/accueil/african-engineer_173387-4229.jpg"
-                alt="Foreuse-ouverte"
-              />
-            </div>
-            <div class="texteReal">
-              <h2>Dépannage</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                voluptate asperiores enim, veniam corporis quisquam? Magni
-                numquam quam omnis distinctio.
-              </p>
-              <div class="savoir">
-                <i class="fa-solid fa-screwdriver-wrench"></i>
-                <a href="./Pages/galerie.html">En savoir plus &rarr;</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="carteReal1">
-            <div class="imgRealisation">
-              <img
-                src="./tools/img/accueil/african-engineer_173387-4229.jpg"
-                alt="Foreuse-ouverte"
-              />
-            </div>
-            <div class="texteReal">
-              <h2>Dépannage</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                voluptate asperiores enim, veniam corporis quisquam? Magni
-                numquam quam omnis distinctio.
-              </p>
-              <div class="savoir">
-                <i class="fa-solid fa-screwdriver-wrench"></i>
-                <a href="./Pages/galerie.html">En savoir plus &rarr;</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </body>
-    <footer>
-      <div class="highPart">
-        <div class="lidTech">
-          <div class="texteLidTech">
-            <h1>Lid Technology</h1>
+      <section class="section services section-anchor" id="services">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Services regroupés</p>
+            <h2>Une offre claire, du matériel au logiciel.</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor,
-              necessitatibus ea. Cum
+              Les services proches sont regroupés pour rendre le site plus
+              lisible et aider le client à choisir rapidement la bonne solution.
             </p>
           </div>
 
-          <div class="reseaux">
-            <ul>
-              <li>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              </li>
-            </ul>
+          <div class="service-grid">
+            <article class="service-card">
+              <img
+                src="https://images.unsplash.com/photo-1744113439895-14529bb2f6e6?auto=format&fit=crop&w=900&q=80"
+                alt="Composants d'un tableau électrique industriel"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <span class="service-tag">Électricité</span>
+                <h3>Installations et maintenance électrique</h3>
+                <p>
+                  Conception de schémas, câblage domestique et industriel,
+                  mise en conformité, dépannage et maintenance préventive.
+                </p>
+                <ul class="check-list">
+                  <li>Installations domestiques et industrielles</li>
+                  <li>Dépannage d'appareils électroménagers</li>
+                  <li>Éclairage public et solutions basse consommation</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <img
+                src="https://images.unsplash.com/photo-1758514475001-4bea02fe5184?auto=format&fit=crop&w=900&q=80"
+                alt="Caméra de surveillance fixée sur un bâtiment"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <span class="service-tag">Sécurité</span>
+                <h3>Caméras, surveillance et réseaux</h3>
+                <p>
+                  Installation de caméras IP, enregistreurs, interphones,
+                  réseau local et assistance pour la supervision à distance.
+                </p>
+                <ul class="check-list">
+                  <li>Caméras CCTV et IP</li>
+                  <li>Configuration routeurs, Wi-Fi et réseau local</li>
+                  <li>Maintenance et diagnostic de panne</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <img
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80"
+                alt="Écran affichant du code informatique"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <span class="service-tag">Web</span>
+                <h3>Conception de sites web modernes</h3>
+                <p>
+                  Sites vitrines, pages de présentation, formulaires de contact,
+                  optimisation mobile et intégration des contenus de l'entreprise.
+                </p>
+                <ul class="check-list">
+                  <li>Sites vitrines pour PME et entrepreneurs</li>
+                  <li>Interfaces responsives et rapides</li>
+                  <li>Maintenance, hébergement et amélioration continue</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
+                alt="Interface graphique d'une application web"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <span class="service-tag">Applications</span>
+                <h3>Applications desktop et web</h3>
+                <p>
+                  Outils de gestion pour stock, facturation, suivi clients,
+                  rapports et tableaux de bord adaptés aux besoins internes.
+                </p>
+                <ul class="check-list">
+                  <li>Applications desktop pour Windows</li>
+                  <li>Applications web de gestion</li>
+                  <li>Automatisation et bases de données</li>
+                </ul>
+              </div>
+            </article>
           </div>
         </div>
-        <div class="liens">
-          <h1>Liens Rapides</h1>
-          <ul>
-            <li><a href="#Accueil" class="icon foot">Acceuil</a></li>
-            <li><a href="#propos" class="icon foot">À Propos</a></li>
-            <li><a href="#services" class="icon foot">Service</a></li>
-            <li><a href="#realisations" class="icon foot">Réalisations</a></li>
-            <li><a href="./Pages/contact.html" class="foot">Contact</a></li>
+      </section>
+
+      <section class="section process">
+        <div class="container">
+          <div class="section-heading compact">
+            <p class="eyebrow">Méthode</p>
+            <h2>Un accompagnement simple et contrôlé.</h2>
+          </div>
+          <div class="process-grid">
+            <article>
+              <span>01</span>
+              <h3>Diagnostic</h3>
+              <p>Analyse du besoin, de l'existant et des contraintes terrain.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Conception</h3>
+              <p>Choix des matériels, architecture logicielle et estimation.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Réalisation</h3>
+              <p>Installation, développement, tests et documentation.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>Support</h3>
+              <p>Formation, maintenance et suivi après livraison.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section realisations section-anchor" id="realisations">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Réalisations</p>
+            <h2>Exemples de projets que le site peut mieux mettre en avant.</h2>
+            <p>
+              Les cartes ci-dessous donnent une structure plus commerciale aux
+              réalisations: contexte, valeur livrée et lien vers la galerie.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <img
+                src="https://images.unsplash.com/photo-1744113439895-14529bb2f6e6?auto=format&fit=crop&w=800&q=80"
+                alt="Tableau électrique de contrôle"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <h3>Rénovation électrique</h3>
+                <p>
+                  Reprise de circuits, protection du tableau et amélioration de
+                  la sécurité d'un bâtiment professionnel.
+                </p>
+                <a href="./Pages/galerie.html"
+                  >Voir la galerie <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img
+                src="https://images.unsplash.com/photo-1758514475001-4bea02fe5184?auto=format&fit=crop&w=800&q=80"
+                alt="Caméra de surveillance extérieure"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <h3>Système de vidéosurveillance</h3>
+                <p>
+                  Pose de caméras, configuration d'enregistreur et accès mobile
+                  sécurisé pour le contrôle à distance.
+                </p>
+                <a href="./Pages/galerie.html"
+                  >Voir la galerie <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                alt="Interface d'application de gestion"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <h3>Application de gestion</h3>
+                <p>
+                  Interface web pour suivre les ventes, le stock, les clients et
+                  produire des rapports simples.
+                </p>
+                <a href="./Pages/galerie.html"
+                  >Voir la galerie <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section team">
+        <div class="container">
+          <div class="section-heading compact">
+            <p class="eyebrow">Équipe</p>
+            <h2>Des profils techniques proches du client.</h2>
+          </div>
+          <div class="team-grid">
+            <article class="team-card">
+              <img src="./tools/img/team/menStand.jpg" alt="Portrait de David" />
+              <h3>AMANI MUSAFIRI David</h3>
+              <p>Ingénierie électrique et coordination projets</p>
+            </article>
+            <article class="team-card">
+              <img
+                src="./tools/img/team/menPortrait (2).jpg"
+                alt="Portrait de Pacifique"
+              />
+              <h3>ASANTE RUDAHARANA Pacifique</h3>
+              <p>Installations, maintenance et diagnostic terrain</p>
+            </article>
+            <article class="team-card">
+              <img
+                src="./tools/img/team/menPortrait.jpg"
+                alt="Portrait de Raphaël"
+              />
+              <h3>HEKIMA KANYENYEZI Raphaël</h3>
+              <p>Réseaux, sécurité électronique et support client</p>
+            </article>
+            <article class="team-card">
+              <img src="./tools/img/team/menPortrait.jpg" alt="Portrait de Premice" />
+              <h3>MWIRA Premice</h3>
+              <p>Développement web, applications et automatisation</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container cta-panel">
+          <div>
+            <p class="eyebrow">Projet à lancer</p>
+            <h2>Expliquez votre besoin, nous proposons une solution claire.</h2>
+          </div>
+          <a class="btn btn-primary" href="./Pages/contact.html">
+            Contacter LID Technology
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h2>LID Technology</h2>
+          <p>
+            Services électriques, sécurité électronique, réseaux, sites web et
+            applications métier pour PME, organisations et particuliers.
+          </p>
+          <ul class="social-links" aria-label="Réseaux sociaux">
+            <li>
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li>
+              <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </li>
           </ul>
         </div>
-        <div class="contactFooter">
-          <h1>Contacts</h1>
-          <ul>
+
+        <div>
+          <h2>Liens rapides</h2>
+          <ul class="footer-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#propos">À propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#realisations">Réalisations</a></li>
+            <li><a href="./Pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Contacts</h2>
+          <ul class="footer-links">
             <li>
               <a
                 href="https://www.google.com/maps/place/Goma/@-1.6587696,29.2081085,13z/data=!3m1!4b1!4m6!3m5!1s0x19dd0f5ff03ccf71:0x8702d152f9f905e7!8m2!3d-1.658501!4d29.2204548!16zL20vMDRoa255?entry=ttu&g_ep=EgoyMDI1MDkyOC4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
-                ><i class="fa-solid fa-location-dot"></i>
-                <p>Goma, RDC</p></a
+                rel="noreferrer"
+                ><i class="fa-solid fa-location-dot"></i> Goma, RDC</a
               >
             </li>
             <li>
-              <a href="https://wa.me/243993434727" target="_blank"
-                ><i class="fa-brands fa-whatsapp"></i>
-                <p>+243 993 434 727</p></a
-              >
+              <a href="https://wa.me/243993434727" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-whatsapp"></i> +243 993 434 727
+              </a>
             </li>
             <li>
-              <a href="mailto:lidtechnology2025@gmail.com" target="_blank"
-                ><i class="fa-solid fa-envelope"></i>
-                <p>lidtechnolgy2025@gmail.com</p></a
-              >
+              <a href="mailto:lidtechnology2025@gmail.com">
+                <i class="fa-solid fa-envelope"></i> lidtechnology2025@gmail.com
+              </a>
             </li>
           </ul>
         </div>
-        <div class="news">
-          <h1>Newsletter</h1>
-          <form method="post">
+
+        <div>
+          <h2>Newsletter</h2>
+          <form class="newsletter-form" method="post">
+            <label class="sr-only" for="newsletter-email">Adresse e-mail</label>
             <input
-              required="on"
+              required
               type="email"
               name="adresseMail"
-              id="adressemail"
-              placeholder="Entrez votre e-mail"
+              id="newsletter-email"
+              placeholder="Votre e-mail"
             />
-            <button><i class="fas fa-paper-plane"></i></button>
+            <button type="submit" aria-label="S'abonner">
+              <i class="fas fa-paper-plane"></i>
+            </button>
           </form>
-
-          <p>Abonnez-vous pour recevoir nos dernières actualités</p>
+          <p>Recevez les nouveautés, conseils de maintenance et offres de service.</p>
         </div>
       </div>
-      <div class="downPart">
-        <p class="down">&copy; LID Technology. Tous droit réservés</p>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LID Technology. Tous droits réservés.</p>
         <p>Fait par David</p>
       </div>
     </footer>

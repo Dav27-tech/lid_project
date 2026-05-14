@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LID Technology</title>
+    <meta
+      name="description"
+      content="Contactez LID Technology pour un devis en électricité, sécurité électronique, réseaux, sites web ou applications métier."
+    />
+    <title>Contact | LID Technology</title>
     <link rel="shortcut icon" href="./../tools/img/Logo/logo-LID-Tech-bg.png" />
+    <link rel="stylesheet" href="./../style/shared.css" />
     <link rel="stylesheet" href="./../style/contact.css" />
     <link
       rel="stylesheet"
@@ -15,216 +20,259 @@
     />
   </head>
   <body>
-    <header></header>
-    <body>
-      <div class="textecontc">
-        <div class="logoContact">
-          <div class="imgLogoCont">
-            <img
-              src="./../tools/img/Logo/logo-LID-Tech-bg.png"
-              alt="Imnage LID-Tech"
-            />
-          </div>
-          <div class="buttonCont">
-            <button onclick="window.location.href='./../index.html'">
-              Accueil
-            </button>
-          </div>
-        </div>
-        <h1>CONTACTEZ-NOUS</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci hic
-          quaerat voluptatum optio vitae dicta in facilis nihil aut quis!
-          Consequatur sunt earum illo iusto quis natus excepturi? Rerum, esse?
-        </p>
-      </div>
-      <div class="img">
+    <header class="site-header">
+      <nav class="nav-bar" aria-label="Navigation principale">
+        <a class="brand" href="./../index.html#accueil" aria-label="LID Technology">
+          <img src="./../tools/img/Logo/logo-LID-Tech.png" alt="" />
+          <span>LID Technology</span>
+        </a>
+
+        <ul class="nav-links">
+          <li>
+            <a href="./../index.html#accueil"><i class="fas fa-home"></i> Accueil</a>
+          </li>
+          <li>
+            <a href="./../index.html#propos"
+              ><i class="fas fa-info-circle"></i> À propos</a
+            >
+          </li>
+          <li>
+            <a href="./../index.html#services"
+              ><i class="fa-solid fa-screwdriver-wrench"></i> Services</a
+            >
+          </li>
+          <li>
+            <a href="./../index.html#realisations"
+              ><i class="fas fa-project-diagram"></i> Réalisations</a
+            >
+          </li>
+        </ul>
+
+        <a class="btn btn-primary" href="https://wa.me/243993434727">
+          <i class="fa-brands fa-whatsapp"></i>
+          WhatsApp
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-hero">
         <img
-          src="./../tools/img/contact/warehouse-smiling-colleagues-scanning-cardboard-box-barcode-chatting_482257-77667.jpg"
-          alt="groupe of electricians"
+          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1800&q=80"
+          alt="Équipe professionnelle travaillant autour d'une table"
+          class="contact-hero-img"
         />
-        <div class="obscurite"></div>
-        <div class="contactDown">
-          <div class="contactLeft">
-            <h2><i class="fa-solid fa-location-dot"></i> Adresse</h2>
-            <p>Goma, RDC</p>
-            <br />
-            <h2><i class="fa-solid fa-phone"></i> Téléphone</h2>
-            <p>+243 993434727</p>
-            <br />
-            <h2><i class="fa-solid fa-envelope"></i> Email</h2>
-            <p>lidtechnology2025@gmail.com</p>
-          </div>
-          <div class="contactRight">
-            <form method="post" action="">
-              <label for="name">Nom </label><br />
-              <div class="rightDiv">
+        <div class="contact-hero-overlay"></div>
+        <div class="container contact-hero-content">
+          <p class="eyebrow">Contact</p>
+          <h1>Parlons de votre projet technique.</h1>
+          <p>
+            Décrivez votre besoin: installation électrique, maintenance,
+            caméras, réseau, site web ou application métier. Nous vous
+            répondrons avec une proposition claire.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="container contact-layout">
+          <aside class="contact-info" aria-label="Coordonnées">
+            <p class="eyebrow">Coordonnées</p>
+            <h2>Un contact direct pour accélérer le diagnostic.</h2>
+            <div class="info-list">
+              <a
+                href="https://www.google.com/maps/place/Goma/@-1.6587696,29.2081085,13z/data=!3m1!4b1!4m6!3m5!1s0x19dd0f5ff03ccf71:0x8702d152f9f905e7!8m2!3d-1.658501!4d29.2204548!16zL20vMDRoa255?entry=ttu&g_ep=EgoyMDI1MDkyOC4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+                <span>
+                  <strong>Adresse</strong>
+                  Goma, RDC
+                </span>
+              </a>
+              <a href="tel:+243993434727">
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                  <strong>Téléphone</strong>
+                  +243 993 434 727
+                </span>
+              </a>
+              <a href="mailto:lidtechnology2025@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                  <strong>Email</strong>
+                  lidtechnology2025@gmail.com
+                </span>
+              </a>
+              <a href="https://wa.me/243993434727" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>
+                  <strong>WhatsApp</strong>
+                  Réponse rapide pour les urgences
+                </span>
+              </a>
+            </div>
+          </aside>
+
+          <form class="contact-form" method="post" action="">
+            <div class="form-heading">
+              <p class="eyebrow">Demande de devis</p>
+              <h2>Envoyez les détails du besoin.</h2>
+            </div>
+
+            <div class="form-grid">
+              <label>
+                Nom
                 <input
                   type="text"
-                  placeholder="Entrez votre nom"
-                  required="on"
-                  id="nom"
+                  name="nom"
+                  placeholder="Votre nom"
+                  autocomplete="family-name"
+                  required
                 />
-              </div>
-              <br />
-
-              <label for="postnom">Post-nom</label><br />
-              <div class="rightDiv">
+              </label>
+              <label>
+                Post-nom
                 <input
                   type="text"
-                  placeholder="Entrez votre post-nom"
-                  required="on"
-                  id="postnom"
+                  name="postnom"
+                  placeholder="Votre post-nom"
+                  autocomplete="additional-name"
                 />
-              </div>
-              <br />
-
-              <label for="name">Sexe</label><br />
-              <div class="rightDiv1">
-                <select name="sexe" id="sexe" required="on">
-                  <option
-                    value=""
-                    style="color: rgb(214, 207, 207)"
-                    disabled
-                    selected
-                    hidden
-                  >
-                    Choisissez votre sexe
-                  </option>
-                  <option value="m">M</option>
-                  <option value="f">F</option>
-                </select>
-              </div>
-              <br />
-
-              <label for="name">Téléphone</label><br />
-              <div class="rightDiv">
+              </label>
+              <label>
+                Téléphone
                 <input
                   type="tel"
-                  required="on"
-                  placeholder="Entrez votre numéro"
-                  id="numero"
+                  name="telephone"
+                  placeholder="+243 ..."
+                  autocomplete="tel"
+                  required
                 />
-              </div>
-              <br />
-
-              <label for="name">Email</label><br />
-              <div class="rightDiv">
+              </label>
+              <label>
+                Email
                 <input
                   type="email"
-                  required="on"
-                  placeholder="Entrez votre e-mail"
-                  id="emailCont"
+                  name="email"
+                  placeholder="nom@exemple.com"
+                  autocomplete="email"
+                  required
                 />
-              </div>
-              <br />
+              </label>
+            </div>
 
-              <label for="name">Message</label><br />
-              <div class="rightDiv2">
-                <textarea
-                  id="message"
-                  placeholder="Écrivez votre message"
-                ></textarea>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </body>
-    <footer>
-      <div class="highPart">
-        <div class="lidTech">
-          <div class="texteLidTech">
-            <h1>Lid Technology</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor,
-              necessitatibus ea. Cum
-            </p>
-          </div>
+            <label>
+              Type de service
+              <select name="service" required>
+                <option value="" selected disabled>Choisissez un service</option>
+                <option>Installations et maintenance électrique</option>
+                <option>Caméras, surveillance et réseaux</option>
+                <option>Conception de site web</option>
+                <option>Application desktop ou web</option>
+                <option>Autre besoin technique</option>
+              </select>
+            </label>
 
-          <div class="reseaux">
-            <ul>
-              <li>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              </li>
-            </ul>
-          </div>
+            <label>
+              Message
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Décrivez le lieu, le problème, l'objectif ou le délai souhaité."
+                required
+              ></textarea>
+            </label>
+
+            <button class="btn btn-primary" type="submit">
+              Envoyer la demande
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
         </div>
-        <div class="liens">
-          <h1>Liens Rapides</h1>
-          <ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h2>LID Technology</h2>
+          <p>
+            Services électriques, sécurité électronique, réseaux, sites web et
+            applications métier pour PME, organisations et particuliers.
+          </p>
+          <ul class="social-links" aria-label="Réseaux sociaux">
             <li>
-              <a href="./../index.html#Accueil" class="icon foot">Acceuil</a>
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
             </li>
             <li>
-              <a href="./../index.html#propos" class="icon foot">À Propos</a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
             </li>
             <li>
-              <a href="./../index.html#services" class="icon foot">Service</a>
+              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
             </li>
             <li>
-              <a href="./../index.html#realisations" class="icon foot"
-                >Réalisations</a
-              >
+              <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
             </li>
-            <li><a href="#" class="foot">Contact</a></li>
           </ul>
         </div>
-        <div class="contactFooter">
-          <h1>Contacts</h1>
-          <ul>
+
+        <div>
+          <h2>Liens rapides</h2>
+          <ul class="footer-links">
+            <li><a href="./../index.html#accueil">Accueil</a></li>
+            <li><a href="./../index.html#propos">À propos</a></li>
+            <li><a href="./../index.html#services">Services</a></li>
+            <li><a href="./../index.html#realisations">Réalisations</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Contacts</h2>
+          <ul class="footer-links">
             <li>
               <a
                 href="https://www.google.com/maps/place/Goma/@-1.6587696,29.2081085,13z/data=!3m1!4b1!4m6!3m5!1s0x19dd0f5ff03ccf71:0x8702d152f9f905e7!8m2!3d-1.658501!4d29.2204548!16zL20vMDRoa255?entry=ttu&g_ep=EgoyMDI1MDkyOC4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
-                ><i class="fa-solid fa-location-dot"></i>
-                <p>Goma, RDC</p></a
+                rel="noreferrer"
+                ><i class="fa-solid fa-location-dot"></i> Goma, RDC</a
               >
             </li>
             <li>
-              <a href="https://wa.me/243993434727" target="_blank"
-                ><i class="fa-brands fa-whatsapp"></i>
-                <p>+243 993 434 727</p></a
-              >
+              <a href="https://wa.me/243993434727" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-whatsapp"></i> +243 993 434 727
+              </a>
             </li>
             <li>
-              <a href="mailto:lidtechnology2025@gmail.com" target="_blank"
-                ><i class="fa-solid fa-envelope"></i>
-                <p>lidtechnolgy2025@gmail.com</p></a
-              >
+              <a href="mailto:lidtechnology2025@gmail.com">
+                <i class="fa-solid fa-envelope"></i> lidtechnology2025@gmail.com
+              </a>
             </li>
           </ul>
         </div>
-        <div class="news">
-          <h1>Newsletter</h1>
-          <form method="post">
+
+        <div>
+          <h2>Newsletter</h2>
+          <form class="newsletter-form" method="post">
+            <label class="sr-only" for="newsletter-email">Adresse e-mail</label>
             <input
-              required="on"
+              required
               type="email"
               name="adresseMail"
-              id="adressemail"
-              placeholder="Entrez votre e-mail"
+              id="newsletter-email"
+              placeholder="Votre e-mail"
             />
-            <button><i class="fas fa-paper-plane"></i></button>
+            <button type="submit" aria-label="S'abonner">
+              <i class="fas fa-paper-plane"></i>
+            </button>
           </form>
-
-          <p>Abonnez-vous pour recevoir nos dernières actualités</p>
+          <p>Recevez les nouveautés, conseils de maintenance et offres de service.</p>
         </div>
       </div>
-      <div class="downPart">
-        <p>&copy; LID Technology. Tous droit réservés</p>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LID Technology. Tous droits réservés.</p>
         <p>Fait par David</p>
       </div>
     </footer>
