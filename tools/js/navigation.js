@@ -1,6 +1,7 @@
 (() => {
   const header = document.querySelector(".site-header");
   const navToggle = document.querySelector(".nav-toggle");
+  const backToTop = document.querySelector(".back-to-top");
   const navLinks = Array.from(document.querySelectorAll(".nav-links a[href]"));
   const navAction = document.querySelector(".nav-bar > .btn");
   const reducedMotion = window.matchMedia(
@@ -48,6 +49,7 @@
   const updateHeader = () => {
     if (!header) return;
     header.classList.toggle("is-scrolled", window.scrollY > 12);
+    backToTop?.classList.toggle("is-visible", window.scrollY > 420);
   };
 
   let ticking = false;
@@ -62,6 +64,13 @@
 
   updateHeader();
   window.addEventListener("scroll", requestHeaderUpdate, { passive: true });
+
+  backToTop?.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: reducedMotion ? "auto" : "smooth",
+    });
+  });
 
   const samePageLinks = navLinks.filter((link) => {
     const url = new URL(link.href, window.location.href);
