@@ -65,7 +65,11 @@
           </li>
         </ul>
 
-        <a class="btn btn-primary" href="https://wa.me/243993434727">
+        <a
+          class="btn btn-primary"
+          target="_blank"
+          href="https://wa.me/243993434727"
+        >
           <i class="fa-brands fa-whatsapp"></i>
           WhatsApp
         </a>
@@ -136,7 +140,17 @@
             </div>
           </aside>
 
-          <form class="contact-form" method="post" action="">
+          <form
+            class="contact-form"
+            id="contact-form"
+            action="https://formspree.io/f/mojrodpz"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="Nouvelle demande - LID Technology"
+            />
             <div class="form-heading">
               <p class="eyebrow">Demande de devis</p>
               <h2>Envoyez les détails du besoin.</h2>
@@ -177,6 +191,7 @@
                 <input
                   type="email"
                   name="email"
+                  id="email"
                   placeholder="nom@exemple.com"
                   autocomplete="email"
                   required
