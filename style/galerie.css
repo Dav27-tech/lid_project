@@ -1,7 +1,7 @@
 .gallery-hero {
-  padding: clamp(80px, 10vw, 130px) 0;
+  padding: clamp(68px, 8vw, 104px) 0;
   background:
-    linear-gradient(135deg, rgba(17, 24, 39, 0.98), rgba(49, 46, 129, 0.9)),
+    linear-gradient(135deg, rgba(17, 24, 39, 0.98), rgba(15, 118, 110, 0.9)),
     #111827;
   color: #ffffff;
 }
@@ -26,18 +26,18 @@
 }
 
 .gallery-hero .eyebrow {
-  color: #7dd3fc;
+  color: var(--accent);
 }
 
 .gallery-section {
-  padding: clamp(62px, 8vw, 106px) 0;
+  padding: clamp(54px, 7vw, 88px) 0;
   background: #f6f8fb;
 }
 
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 22px;
+  gap: clamp(16px, 2.5vw, 22px);
 }
 
 .gallery-card {
@@ -61,7 +61,7 @@
 .gallery-card span {
   display: inline-flex;
   margin-bottom: 12px;
-  color: #0f766e;
+  color: var(--primary);
   font-size: 0.78rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -82,7 +82,7 @@
   align-items: center;
   min-height: 100%;
   background:
-    linear-gradient(135deg, rgba(20, 184, 166, 0.12), rgba(245, 158, 11, 0.13)),
+    linear-gradient(135deg, rgba(15, 118, 110, 0.12), rgba(56, 189, 248, 0.08)),
     #ffffff;
 }
 
